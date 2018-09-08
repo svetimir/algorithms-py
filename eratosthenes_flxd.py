@@ -1,7 +1,10 @@
+# -*- coding: utf-8 -*-
+
 # решето Эратосфена
 
-# 29.08.2017
-# Georgy Yashin, ifi@yandex.ru
+# AUTHOR: Georgy Yashin, ifi@yandex.ru
+# DATE: 29.08.2017
+# LATEST REVISION: 08.09.2018
 
 def eratosthenes_flxd(max_num):
     """
@@ -25,5 +28,7 @@ def eratosthenes_flxd(max_num):
         j+=1
     return s
 
-print("Prime numbers found:\n",eratosthenes_flxd(1000))
+if __name__=="__main__":
+    print("testing "+eratosthenes_flxd.__name__)
+    print("Prime numbers found:\n",eratosthenes_flxd(1000))
 

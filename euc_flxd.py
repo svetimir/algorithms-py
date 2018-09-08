@@ -1,8 +1,11 @@
+# -*- coding: utf-8 -*-
+
 # нахождение наибольшего общего делителя
 # алгоритм Евклида
 
-# Georgy Yashin, ifi@yandex.ru
-# 28.08.2017
+# AUTHOR: Georgy Yashin, ifi@yandex.ru
+# DATE: 28.08.2017
+# LATEST REVISION: 08.09.2018
 
 import math
 
@@ -14,5 +17,10 @@ def euq_flxd(a,b):
         b=r
     return a
 
-print(euq_flxd(4851,3003))
-print(euq_flxd(531441,12))
+if __name__=="__main__":
+    a=[4851,3003,531441,24]
+    print("testing "+euq_flxd.__name__+" with values: ")
+    print("{} {}\n{} {}".format(a[0],a[1],a[2],a[3]))
+    print("got:")
+    print(euq_flxd(a[0],a[1]))
+    print(euq_flxd(a[2],a[3]))
