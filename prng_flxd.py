@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # pseudorandom number generator
 # генератор псевдослучайных чисел
 # по линейному конгруэнтному методу
@@ -5,8 +6,8 @@
 # указанное количество псевдослучайных чисел
 # в csv-формате 
 
-# Georgy Yashin, ifi@yandex.ru
-# 27.08.2017
+# AUTHOR: Georgy Yashin, ifi@yandex.ru
+# DATE: 27.08.2017
 
 import math
 import time

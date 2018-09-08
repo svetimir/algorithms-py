@@ -1,13 +1,14 @@
-#алгоритмы и структуры данных
-#односвязный список
+# -*- coding: utf-8 -*-
+# алгоритмы и структуры данных
+# односвязный список
 
-#Georgy Yashin, ifi@yandex.ru
-#5.9.2017
+# AUTHOR: Georgy Yashin, ifi@yandex.ru
+# DATE: 5.9.2017
 
 import random
 import math
 
-#класс Node для определения элемента списка
+# класс Node для определения элемента списка
 class Node:
     def __init__(self, value = None, next = None):
         self.value = value
@@ -32,17 +33,17 @@ class LinkedList:
     def clear(self):
         self.__init__()
 
-#добавление в конец списка
+# добавление в конец списка
     def add(self, x):
         self.length+=1
         if self.first == None:
-            #self.first и self.last будут указывать на одну область памяти
+            # self.first и self.last будут указывать на одну область памяти
             self.last = self.first = Node(x, None)
         else:
-            #здесь, уже на разные, т.к. произошло присваивание
+            # здесь, уже на разные, т.к. произошло присваивание
             self.last.next = self.last = Node(x, None)
 
-#добавление в произвольное место
+# добавление в произвольное место
     def InsertNth(self,i,x):
         if self.first == None:
             self.last = self.first = Node(x, None)
@@ -61,7 +62,7 @@ class LinkedList:
               break
             curr = curr.next
 
-#удаление элемента
+# удаление элемента
     def Del(self,i):
         if (self.first == None):
           return
@@ -80,11 +81,12 @@ class LinkedList:
             curr = curr.next
             count += 1
 
-l=LinkedList()
-for i in range(10):
-    l.add(random.randint(0,10))
-
-print(l)
-
-l.Del(0)
-print(l)
+# test
+if __name__=="__main__":
+    print("testing "+LinkedList.__name__)
+    l=LinkedList()
+    for i in range(10):
+        l.add(random.randint(0,10))
+    print(l)
+    l.Del(0)
+    print(l)

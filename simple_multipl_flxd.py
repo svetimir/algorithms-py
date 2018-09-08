@@ -1,7 +1,8 @@
-#нахождение простых множителей числа
+# -*- coding: utf-8 -*-
 
-#28.08.2017
-#Georgy Yashin, ifi@yandex.ru
+# AUTHOR: Georgy Yashin, ifi@yandex.ru
+# DATE: 28.08.2017
+# DESCRIPTION: нахождение простых множителей числа
 
 import math
 

@@ -1,7 +1,8 @@
-#рандомизация массива
+# -*- coding: utf-8 -*-
 
-#28.08.2017
-#Georgy Yashin, ifi@yandex.ru
+# AUTHOR: Georgy Yashin, ifi@yandex.ru
+# DATE: 28.08.2017
+# DESCRIPTION: рандомизация массива
 
 import random
 
@@ -16,7 +17,7 @@ def randomize_array_flxd(a):
         a[j]=tmp
     return a
 
-a,b=create_array_flxd(10),create_array_flxd(10)
-
-print(a,b)
-print(randomize_array_flxd(a),randomize_array_flxd(b))
+if __name__=="__main__":
+    a,b=create_array_flxd(10),create_array_flxd(10)
+    print(a,b)
+    print(randomize_array_flxd(a),randomize_array_flxd(b))

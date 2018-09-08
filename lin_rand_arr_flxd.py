@@ -1,7 +1,10 @@
-#генерация массива псевдослучайных чисел заданного размера
+# -*- coding: utf-8 -*-
 
-#Georgy Yashin, ifi@yandex.ru
-#28.08.2017
+# AUTHOR: Georgy Yashin, ifi@yandex.ru
+# DATE: 28.08.2017
+# LATEST REVISION: 08.09.2018
+# DESCRIPTION:
+## генерация массива псевдослучайных чисел заданного размера
 
 import math
 import time
@@ -19,4 +22,6 @@ def lin_rand_arr_flxd(seed,size):
         r[i]=math.ceil(math.fmod((a*r[i-1]+b),m))
     return r[1:size]
 
-print(lin_rand_arr_flxd(time.time(),10))
+if __name__=="__main__":
+    print("testing "+lin_rand_arr_flxd.__name__)
+    print(lin_rand_arr_flxd(time.time(),10))
