@@ -13,7 +13,7 @@ import random
 def f(x):
     pass;
 
-#наибольший общий делитель
+# наибольший общий делитель
 def gcd(a,b):
     while b>0.01:
         r=math.fmod(a,b)
@@ -21,7 +21,7 @@ def gcd(a,b):
         b=r
     return a
 
-#проверка на дубликаты
+# проверка на дубликаты
 def dub(a):
     j=0
     d=0
