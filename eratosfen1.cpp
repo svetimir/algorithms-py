@@ -7,7 +7,7 @@
 
 /*
     USAGE:
-    eratosfen.exe -n <NUM>
+    eratosfen_flxd.exe -n <NUM>
     NUM - maximal number
 
     (c)2015 Georgy Yashin, ifi@yandex.ru
@@ -21,7 +21,7 @@ using namespace std;
 
 void usage()
 {
-    printf("eratosfen.exe - search and print all simple numbers lesser than given\nUSAGE:\neratosfen.exe -n <NUM>\nNUM - maximal number\n(c)2015, Georgy Yashin, ifi@yandex.ru");
+    printf("eratosfen_flxd.exe - search and print all simple numbers lesser than given\nUSAGE:\neratosfen.exe -n <NUM>\nNUM - maximal number\n(c)2015, Georgy Yashin, ifi@yandex.ru");
 }
 
 int main(int argc,char*argv[])
@@ -30,7 +30,7 @@ int main(int argc,char*argv[])
     /*
         Обработка параметров
     */
-    if(argc<2)
+    if(argc<3)
     {
         usage();
         return 0;
