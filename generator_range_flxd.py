@@ -13,6 +13,8 @@ import math
 
 # для рисования графика
 import matplotlib.pyplot as plt
+import scipy.integrate as ig
+import numpy as np
 
 def drange(start,stop,step):
     """функция-генератор списка"""
@@ -23,25 +25,17 @@ def drange(start,stop,step):
 
 def f(x):
     """0.1"""
-    return math.sin(x)
-
-def tr_integral(f,xmin,xmax,n):
-    """процедура интегрирования по методу трапеций"""
-    dx=(xmax-xmin)/n
-    area=0
-    x=xmin
-    for i in range(n):
-        area+=dx*(f(x)+f(x+dx))/2
-        x+=dx
-    return area
+    return math.exp(-x**2)
 
 def g(x):
-    return tr_integral(f,-1e6,x,1000)
+    """non elementary function"""
+    y,err=ig.quad(f,-10,x)
+    return y
 
 if __name__=="__main__":
     xmin=-5.0
     xmax=5.0
-    n=400
+    n=500
     dx=(xmax-xmin)/n
 # табулируем функцию в пределах xmin,xmax
     print("testing "+drange.__name__)
