@@ -7,7 +7,7 @@
 
 # AUTHOR: Georgy Yashin, ifi@yandex.ru
 # DATE: 04.09.2017
-# LATEST REVISION: 08.09.2018
+# LATEST REVISION: 11.09.2018
 
 import math
 
